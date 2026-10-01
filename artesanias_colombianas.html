@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artesanias colombianas</title>
+    <link rel="stylesheet" href="artesanias_colombianas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="artesanias_colombianas.js" defer></script>
+</head>
+<body>
+    <!------------------------------------------->
+    <!--|estructuracion_artesanias_colombianas|-->
+    <!------------------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-hands"></i>
+        </div>
+        <div>
+            <h1>Artesanías Colombianas</h1>
+            <p>Tradición, creatividad y cultura de Colombia</p>
+        </div>
+    </header>
+    <!------------------------->
+    <!--|contenido_principal|-->
+    <!------------------------->
+    <main class="contenedor">
+        <section class="presentacion">
+            <i class="fa-solid fa-star"></i>
+            <div>
+                <h2>Productos artesanales</h2>
+                <p>Conoce algunos productos hechos de forma artesanal.</p>
+            </div>
+        </section>
+        <!---------------------------->
+        <!--|contenedor_de_tarjetas|-->
+        <!---------------------------->
+        <section class="productos" id="productos">
+            <article class="tarjeta" data-id="1">
+                <div class="imagen_producto mochila">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="contenido_tarjeta">
+                    <span class="etiqueta">Artesanía Wayuu</span>
+                    <input class="nombre_producto" type="text" value="Mochila Wayuu">
+                    <textarea class="descripcion_producto">Mochila tejida a mano con diseños tradicionales y colores llamativos.</textarea>
+                    <div class="precio">
+                        <i class="fa-solid fa-tag"></i>
+                        <input class="precio_producto" type="number" value="85000">
+                    </div>
+                    <div class="acciones">
+                        <button class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje"></p>
+                </div>
+            </article>
+            <article class="tarjeta" data-id="2">
+                <div class="imagen_producto mascara">
+                    <i class="fa-solid fa-mask-face"></i>
+                </div>
+                <div class="contenido_tarjeta">
+                    <span class="etiqueta">Arte en madera</span>
+                    <input class="nombre_producto" type="text" value="Máscara de madera">
+                    <textarea class="descripcion_producto">Pieza decorativa tallada en madera con detalles inspirados en la cultura colombiana.</textarea>
+                    <div class="precio">
+                        <i class="fa-solid fa-tag"></i>
+                        <input class="precio_producto" type="number" value="120000">
+                    </div>
+                    <div class="acciones">
+                        <button class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje"></p>
+                </div>
+            </article>
+            <article class="tarjeta" data-id="3">
+                <div class="imagen_producto ceramica">
+                    <i class="fa-solid fa-vase"></i>
+                </div>
+                <div class="contenido_tarjeta">
+                    <span class="etiqueta">Cerámica artesanal</span>
+                    <input class="nombre_producto" type="text" value="Vasija de cerámica">
+                    <textarea class="descripcion_producto">Vasija decorativa elaborada artesanalmente con formas y acabados tradicionales.</textarea>
+                    <div class="precio">
+                        <i class="fa-solid fa-tag"></i>
+                        <input class="precio_producto" type="number" value="65000">
+                    </div>
+                    <div class="acciones">
+                        <button class="boton guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                        <button class="boton restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                    </div>
+                    <p class="mensaje"></p>
+                </div>
+            </article>
+        </section>
+        <!--------------------->
+        <!--|control_general|-->
+        <!--------------------->
+        <section class="control_general">
+            <button id="restablecerTodo" class="boton boton_general"><i class="fa-solid fa-trash"></i>Restablecer todos los productos</button>
+            <p id="mensajeGeneral"></p>
+        </section>
+    </main>
+</body>
+</html>
